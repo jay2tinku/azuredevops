@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sbx-azuredevops
+  description: Final Catalog entry fixed in pr-branch.
+  owner: sandboxenvrakesh
+  annotations:
+    #dev.azure.com/organization: sandboxenvrakesh
+    dev.azure.com/project-repo: sandbox_devops/sandbox_devops
+    dev.azure.com/host-org: dev.azure.com/sandboxenvrakesh
+    #dev.azure.com/project: sandbox_devops
+    #dev.azure.com/repo: sandbox_devops
+    dev.azure.com/readme-path: /README.md
+    dev.azure.com/build-definition: "Set up CI with Azure Pipelines"
+    #azure.com/organization: sandboxenvrakesh
+    #azure.com/project-name: sandbox_devops
+    #azure.com/repo: sandbox_devops
+  tags:
+    - devops
+    - azure
+    - integration
+
+spec:
+  type: service
+  owner: sandboxenvrakesh
+  lifecycle: production
+  system: sandboxenvrakesh
+  links:
+    - url: https://dev.azure.com/sandboxenvrakesh/sandbox_devops
+      title: Azure DevOps Project
+      icon: external-link
